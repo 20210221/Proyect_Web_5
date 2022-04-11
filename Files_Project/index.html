@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Web</title>
+    <link rel="stylesheet" href="./Styles/index_style.css">
+    <link rel="stylesheet" href="./Icons/style.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Google_Contacts_logo.png" type="image/x-icon">
+</head>
+<body>
+    <div id = "container" class="container">
+        <div id = "addContactSection" class="addContactSection">
+            <button id="addContact-btn" class="addContact-btn"><span class="icon-user-plus"></span> Nuevo Contacto</button>
+            <div id = "addContactArea" class="addContactArea">
+               <form class="formSection">
+                <p class="TitleSize"><span class="icon-address-book"></span>Agregar Contacto</p>
+                <p class="label">Nombre</p>
+                <input required minlength="4" maxlength="15" id = "NameContact" placeholder="Introduzca Nombre..." type="text" class="DataContact">
+                <p class="label">Apellido</p>
+                <input required minlength="4" maxlength="20" id = "LNameContact" placeholder="Introduzca Apellido..." type="text" class="DataContact">
+                <p class="label">Teléfono</p>
+                <input required minlength="8" maxlength="15" id = "PhoneContact" placeholder="Introduzca Teléfono..." type="text"  class="DataContact">
+
+               <div class="ContactActionsSection">
+                <button type="submit" id = "btnAccept"  class="btnAccept">Agregar</button>
+                <button id = "btnCancel"  class="btnCancel">Cancelar</button>
+               </div>
+
+               </form>
+            </div>
+        </div>
+        <div id = "getContactSection" class="getContactSection">
+            <div id = "getContactArea" class="getContactArea">
+                <div class="contactSectionItems bgtitle">
+                    <p>ID</p>
+                   <p>Nombre</p>
+                   <p>Apellido</p>
+                   <p>Teléfono</p>
+                </div>
+               <div id="contactTitle" class="contactSectionItems contactTitle">
+                   <p>ID</p>
+                   <p>Nombre</p>
+                   <p>Apellido</p>
+                   <p>Teléfono</p>
+               </div>
+               <div id="preloader" class="preloader"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./Scripts/index_script.js"></script>
+</body>
+</html>
